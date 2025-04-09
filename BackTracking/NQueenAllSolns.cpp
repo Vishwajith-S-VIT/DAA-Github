@@ -66,10 +66,6 @@ void n_queens(vector<vector<int> > &board, int n, int curr_row)
     }
     for(i=0;i<n;i++)
     {      
-        // if the ith column is valid for current row then
-        // place queen in column and then goto next row  
-        // Remove the queen in the ith column and try other 
-        // columns to right of 'i' - backtrack to find all solutions
         if(not_attacked(board,curr_row,i))
         {
             board[curr_row][i] = 1;
