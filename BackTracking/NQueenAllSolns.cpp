@@ -62,7 +62,7 @@ void n_queens(vector<vector<int> > &board, int n, int curr_row)
     if(curr_row==n)
     {
         print_board(board);
-        return ;
+        return;
     }
     for(i=0;i<n;i++)
     {      
